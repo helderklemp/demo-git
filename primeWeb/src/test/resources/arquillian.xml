@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<arquillian xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://jboss.org/schema/arquillian"
+    xsi:schemaLocation="http://jboss.org/schema/arquillian http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+
+    <container qualifier="arquillian-wls-remote-12.1" default="true">
+        <configuration>
+            <property name="adminUrl">t3://localhost:7001</property>
+            <property name="adminUserName">weblogic</property>
+            <property name="adminPassword">welcome1</property>
+            <property name="wlsHome">/Users/helder/Documents/java/wls12130/wlserver</property>
+            <property name="target">myserver</property>
+        </configuration>
+    </container>
+
+</arquillian>
